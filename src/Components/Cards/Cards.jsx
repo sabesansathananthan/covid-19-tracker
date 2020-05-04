@@ -4,11 +4,14 @@ import styles from "./Cards.module.css";
 import CountUp from "react-countup";
 import cx from "classnames";
 
-const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
+const Cards = ({
+  data: { confirmed, recovered, deaths, lastUpdate },
+  country,
+}) => {
   if (!confirmed) {
     return "Loading...";
   }
-  console.log(confirmed);
+  const active = confirmed["value"] - recovered["value"] - deaths["value"];
   let carddetails = [
     {
       style: styles.infected,
@@ -28,9 +31,13 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       value: deaths.value,
       bottomText: "Number of deaths caused by COVID-19",
     },
+    {
+      style: styles.active,
+      text: "Active",
+      value: active,
+      bottomText: "Number of Active Cases of COVID-19",
+    },
   ];
-
-  console.log(carddetails);
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
@@ -39,26 +46,32 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             item
             component={Card}
             xs={12}
-            md={3}
+            md={2}
             className={cx(styles.Card, detail.style)}
             key={index}
+            style={{ margin: "0px 23.675px", padding: "12px" }}
           >
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
-                {detail.text}
+              <Typography color="textPrimary" gutterBottom>
+                <b>{detail.text}</b>
               </Typography>
               <Typography variant="h5">
                 <CountUp
                   start={0}
                   end={detail.value}
-                  duration={2.5}
+                  duration={2}
                   separator=","
                 />
               </Typography>
-              <Typography color="textPrimary">
+              <Typography color="textPrimary">Last Updated at : </Typography>
+              <Typography color="textSecondary" variant="body2">
                 {new Date(lastUpdate).toDateString()}
               </Typography>
+              <Typography color="textSecondary" variant="body2">
+                {new Date(lastUpdate).toLocaleTimeString()}
+              </Typography>
               <Typography variant="body2">{detail.bottomText}</Typography>
+              <Typography color="textPrimary"> {country} </Typography>
             </CardContent>
           </Grid>
         ))}

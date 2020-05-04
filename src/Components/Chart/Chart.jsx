@@ -37,7 +37,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
   const barChart = confirmed ? (
     <Bar
       data={{
-        labels: ["Infected", "Recovered", "Deaths"],
+        labels: ["Infected", "Recovered", "Deaths", "Active"],
         datasets: [
           {
             label: "People",
@@ -45,8 +45,20 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
               "rgba(0, 0, 255, 0.5)",
               "rgba(0, 255, 0, 0.5)",
               "rgba(255, 0, 0, 0.5)",
+              "rgba(242, 234, 0, 0.5)",
             ],
-            data: [confirmed.value, recovered.value, deaths.value],
+            hoverBackgroundColor: [
+              "rgba(0, 77, 153)",
+              "rgba(30, 102, 49)",
+              "rgba(255, 51, 51)",
+              "rgba(204, 153, 0)",
+            ],
+            data: [
+              confirmed.value,
+              recovered.value,
+              deaths.value,
+              confirmed.value - (recovered.value + deaths.value),
+            ],
           },
         ],
       }}
