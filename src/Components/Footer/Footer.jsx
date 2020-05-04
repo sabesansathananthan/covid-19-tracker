@@ -72,12 +72,20 @@ const Footer = () => {
           style={{
             display: "block",
             marginBottom: "0px",
-            fontSize: 38,
+            fontSize: 30,
             marginTop: "40px",
             textAlign: "center",
           }}
         >
-          Designed by Sabesan Sathananthan
+          Created with care by{" "}
+          <a
+            href="https://github.com/sabesansathananthan/covid-19-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(0,0,255,0.6)", textDecoration: "none" }}
+          >
+            Sabesan Sathananthan
+          </a>
         </h6>
       </div>
       <div className={styles.container}>
@@ -105,6 +113,27 @@ const Footer = () => {
             );
           })}
         </ul>
+      </div>
+      <div className={styles.container}>
+        <h6
+          style={{
+            display: "block",
+            marginBottom: "0px",
+            fontSize: 16,
+            marginTop: "20px",
+            textAlign: "center",
+          }}
+        >
+          Data provided 💖 by{" "}
+          <a
+            href="https://github.com/mathdroid/covid-19-api"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(0,0,255,0.6)", textDecoration: "none" }}
+          >
+            Mathdroid
+          </a>
+        </h6>
       </div>
     </React.Fragment>
   );
