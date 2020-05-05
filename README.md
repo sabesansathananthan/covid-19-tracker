@@ -1,4 +1,5 @@
-#[COVID-19 Tracker](https://world19covid.web.app/)
+[##COVID-19 Tracker](https://world19covid.web.app/)
+
 This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19
 
 ## Technologies used 🛠️
