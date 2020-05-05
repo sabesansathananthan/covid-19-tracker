@@ -1,4 +1,4 @@
-[[COVID-19 Tracker](# COVID-19 Tracker)](https://world19covid.web.app/)
+# [COVID-19 Tracker](https://world19covid.web.app/)
 
 This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19
 
@@ -53,7 +53,8 @@ npm start
 
 ## Deployment Status
 
-## [![Firebase](https://firebase.google.com/images/brand-guidelines/logo-built_black.png)](https://world19covid.web.app/)
+<a href= "https://world19covid.web.app/">
+<img src="https://firebase.google.com/images/brand-guidelines/logo-built_black.png" alt="" width="80" height="40" ></img></a>
 
 ## License 📄
 
