@@ -17,7 +17,7 @@ const Cards = ({
       style: styles.infected,
       text: "Infected",
       value: confirmed.value,
-      bottomText: "Number of active cases of COVID-19",
+      bottomText: "Number of infect cases of COVID-19",
     },
     {
       style: styles.recovered,
@@ -35,7 +35,7 @@ const Cards = ({
       style: styles.active,
       text: "Active",
       value: active,
-      bottomText: "Number of Active Cases of COVID-19",
+      bottomText: "Number of active cases of COVID-19",
     },
   ];
   return (
