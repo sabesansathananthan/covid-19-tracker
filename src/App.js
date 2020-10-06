@@ -29,7 +29,7 @@ class App extends React.Component {
         </text>
         <br />
         <text>
-          <i>(For a Particlar select a Country from below)</i>
+          <i>(For a Particular country, select a Country from below)</i>
         </text>
         <br />
         <br />
