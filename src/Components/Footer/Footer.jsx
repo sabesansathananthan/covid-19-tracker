@@ -75,6 +75,7 @@ const Footer = () => {
             fontSize: 30,
             marginTop: "40px",
             textAlign: "center",
+            fontFamily: "Roboto"
           }}
         >
           Created with care by{" "}
@@ -122,6 +123,7 @@ const Footer = () => {
             fontSize: 16,
             marginTop: "20px",
             textAlign: "center",
+            fontFamily: "Roboto"
           }}
         >
           Data provided 💖 by{" "}
