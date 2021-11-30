@@ -126,7 +126,7 @@ const Footer = () => {
             fontFamily: "Roboto"
           }}
         >
-          Data provided 💖 by{" "}
+          Data provided by{" "}
           <a
             href="https://github.com/mathdroid/covid-19-api"
             target="_blank"
