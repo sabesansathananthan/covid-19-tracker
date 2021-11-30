@@ -41,15 +41,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name:  Display directory structure
+        run:   ls -R
+        shell: bash
       - name: Download Build
         uses: actions/download-artifact@v2
         with:
           name: build
           path: build
+      - name:  Display build directory structure
+        run:   ls -R
+        shell: bash
       - name: Depoy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
           FIREBASE_PROJECT: world19covid
