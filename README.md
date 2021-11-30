@@ -18,6 +18,11 @@ This tracker aims to show the numbers & trends of people affected, recovered and
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/sabesansathananthan/covid-19-tracker?color=ff69b4" />
     </a><a href="https://twitter.com/intent/tweet?text=Wow,%20I%20used%20covid-19-tracker.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan">
       <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan" />
+    </a><a href="https://github.com/sabesansathananthan/covid-19-tracker/actions/workflows/firebase.yml">
+      <img alt="Firebase CI" src="https://github.com/sabesansathananthan/covid-19-tracker/actions/workflows/firebase.yml/badge.svg" />
+    </a>
+      <a href="https://github.com/sabesansathananthan/covid-19-tracker">
+      <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
     </a>
 </p>
 
